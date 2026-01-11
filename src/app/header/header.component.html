@@ -1,0 +1,20 @@
+<header class="header flex space-between items-center">
+  <a href="#home" class="logo pointer">
+    Zdeněk <span>Patík</span>
+  </a>
+
+  <i
+    class="bx bx-menu"
+    id="menu-icon"
+    (click)="toggleMenu()"
+    [class.bx-x]="menuOpen"
+  ></i>
+
+  <nav class="navbar" [class.active]="menuOpen">
+    <a href="#home" [class.active]="activeSection === 'home'">Úvod</a>
+    <a href="#timeline" [class.active]="activeSection === 'timeline'">Časová Osa</a>
+    <a href="#services" [class.active]="activeSection === 'services'">Služby</a>
+    <a href="#reviews" [class.active]="activeSection === 'reviews'">Recenze</a>
+    <a href="#contact" [class.active]="activeSection === 'contact'">Kontakt</a>
+  </nav>
+</header>
